@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: order
+  rabbitmq:
+    host: 127.0.0.1
+    username: guest
+    password: guest
+    port: 5672
+    virtual-host: /
+server:
+  port: 9992
+# 服务名称
+PRODUCT:
+  ribbon:
+    # 配置规则类的全限定名
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+env:
+  test9
