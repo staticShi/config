@@ -15,4 +15,4 @@ PRODUCT:
     # 配置规则类的全限定名
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
 env:
-  test14
+  test15
