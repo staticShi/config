@@ -7,6 +7,17 @@ spring:
     password: guest
     port: 5672
     virtual-host: /
+    # 开启发送确认
+    publisher-confirms: true
+    # 开启发送失败退回
+    publisher-returns: true
+    # 开启ACK
+    listener:
+      direct: 
+        acknowledge-mode: manual
+      simple:
+        acknowledge-mode: manual
+
 server:
   port: 9992
 # 服务名称
